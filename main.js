@@ -3,7 +3,7 @@ function calcSumOfBonus(num) {
     let mus = [];
     let digit = 10000000;
 
-    let sumOddNumbers, sumEvenNumbers = 0;
+    let sumOddNumbers = 0, sumEvenNumbers = 0;
 
     for (let i = 0; i < 8; i++) {
         mus.push(parseInt(num / digit));
@@ -36,6 +36,7 @@ function calcSumOfBonus(num) {
     for (let i = 0; i < 8; i++) {
         if (mus[i] % 2 == 0) {
             sumOddNumbers++;
+            
         } else {
             sumEvenNumbers++;
         }
@@ -46,4 +47,4 @@ function calcSumOfBonus(num) {
         return "0"
     }
 }
-calcSumOfBonus(11435279);
+calcSumOfBonus(16453888);
